@@ -1,0 +1,17 @@
+version: '3.1'
+
+services:
+
+  # user:root
+  mysql:
+    image: mysql:5.7
+    environment:
+      MYSQL_DATABASE: loginDB
+      MYSQL_ROOT_PASSWORD: root
+    ports:
+      - "3306:3306"
+    volumes:
+      - db_data:/var/lib/mysql
+
+volumes:
+  db_data:
