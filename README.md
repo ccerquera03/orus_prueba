@@ -16,47 +16,27 @@ The following instructions will allow you to have a copy of the project and run 
 1. Clone the repository
 
 ```
-https://github.com/juancamilo399/SumerLogin.git
+https://github.com/ccerquera03/orus_prueba.git
 ```
 
-2. Compile the projet
+2. Run the db server
+
+```
+docker compose up
+```
+
+3. Compile the projet
 
 ```
 mvn package
 ```
 
-3. Executing the program
+4. Executing the program
 
 ```
 mvn exec:java -D "exec.mainClass"="com.sumer.login.LoginApplication"
 
 Use port 8080
-```
-### Endpoints
-
-The endpoints of the API are the following:
-- POST request:
-    - /user/register: Register a new User (User Body)
-    - /user/login: User Login (LoginUser Body)
-
-Make the requests to localhost:8080
-
-```
-User Body
-{ 
-    "firstName":"string",
-    "lastName":"string",
-    "email":"string",
-    "password":"string"
-}
-```
-
-```
-LoginUser Body
-{ 
-    "email":"string",
-    "password":"string"
-}
 ```
 
 ## Built With
@@ -66,6 +46,6 @@ LoginUser Body
 
 ## Author
 
-* **Juan Camilo Angel Hernandez** 
+* **Juan Camilo Gonzalez ** 
 
 

@@ -4,6 +4,7 @@ import com.sumer.login.dto.LoginUserDto;
 import com.sumer.login.exceptions.LoginException;
 import com.sumer.login.repository.dto.User;
 
+
 public interface LoginService {
 
     User registerUser(User user) throws LoginException;
